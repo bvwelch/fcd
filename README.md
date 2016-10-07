@@ -1,4 +1,6 @@
 
+[ please look at 'Issues' for questions and feedback. thanks! ]
+
 Preston's better bash dirstack
 
 FIXME: add documentation
