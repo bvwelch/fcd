@@ -27,7 +27,7 @@ but this is not required.
 Since it is an ascii file you can view it, edit it, etc.  Here is a small
 example:
 
-    cat $DIRFILE/.dirstack
+    cat $DIRFILE
     /home/fred
     /path/to/project1
     /path/to/project2
