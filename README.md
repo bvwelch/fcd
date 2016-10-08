@@ -5,7 +5,7 @@ Preston's better bash dirstack
 
 FIXME: this documentation is a work-in-progress
 
-FCD is 'bash' script that you can 'source' from your .bashrc file.
+FCD is a 'bash' script that you can 'source' from your .bashrc file.
 
 The main idea of FCD is allow you to switch between various directory trees
 (hearafter referred to as 'projects').
@@ -35,8 +35,9 @@ example:
 Simple Examples: 
 
     fcd     # display menu and wait for your input/selection
+            # note: after 'cd', automatically looks for existing dirstack
 
-    apd     # add the current directory to the DIRFILE
+    apd     # add the current directory to the current project
 
     dpd     # display menu and allow you to delete an entry
 
@@ -46,17 +47,23 @@ Simple Examples:
 
     fcdhome # 'cd' to $HOME and make it the current project
 
-[ FIXME add more docs below ]
+    fcdswitch # like fcdhome, but then select a different project
 
 Advanced Examples:
 
-fcd nnn
+    fcd 5   # skip menu display, select the 5th entry of current project
 
-fcd + 
+    fcdhere /path/to/some/project # switch to specific project directory tree
 
-fcd + /path/to/some/project
+Need examples and explanations for these:
 
-fcd - /path/to/some/project
+    fcd 5 /path/to/project/.dirstack
 
-fcdhere /path/to/some/project
+    fcd - /path/to/some/project/.dirstack
 
+    fcd - /path/to/some/project/.dirstack 5
+    
+    fcd + arg arg arg ...
+    
+    
+    

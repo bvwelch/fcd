@@ -86,7 +86,7 @@ function fcdhere {
       then
            cd $1
       fi
-       export DIRFILE="$PWD/.dirstack"
+      export DIRFILE="$PWD/.dirstack"
       # create the first entry if necessary
       if test ! -r "$DIRFILE"
       then
@@ -104,14 +104,12 @@ function fcdtop {
 
 # jump to $HOME and restore default dirfile/dirstack
 function fcdhome {
-       cd
-       fcdhere
+       fcdhere $HOME
 }
 
 # switch to an existing project, by number if specified: "fcdswitch 3"
 function fcdswitch {
        fcdhome
        fcd $*
-       fcdhere
 }
 
