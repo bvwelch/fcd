@@ -4,7 +4,7 @@
 #
 # the sed is to handle bill gates stupid spaces in direcory names
 # file $HOME/.sed_dir.txt contains "s/\/\/\// /g"
-# If first arguemnt is a + then work as before but after cd do fdchere.
+# If first argument is a + then work as before but after cd do fcdhere.
 
 export DIRFILE="$HOME/.dirstack"
 
