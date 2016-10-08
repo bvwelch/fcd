@@ -32,8 +32,7 @@ example:
     /path/to/project1
     /path/to/project2
 
-Simple Examples: each of these will display the menu and let you
-make your selection.
+Simple Examples: 
 
     fcd     # display menu and wait for your input/selection
 
