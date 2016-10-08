@@ -41,11 +41,11 @@ make your selection.
 
     dpd     # display menu and allow you to delete an entry
 
-    fcdhere # set the DIRFILE to the current directory
+    fcdhere # make the current directory the current 'project'
 
-    fcdtop  # 'cd' to the DIRFILE directory
+    fcdtop  # 'cd' to the top-level of the current project
 
-    fcdhome # 'cd' to $HOME and also set DIRFILE
+    fcdhome # 'cd' to $HOME and make it the current project
 
 [ FIXME add more docs below ]
 
