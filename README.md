@@ -57,11 +57,11 @@ Advanced Examples:
 
 Need examples and explanations for these:
 
-    fcd 5 /path/to/project/.dirstack
+    fcd 5 /path/to/project
 
-    fcd - /path/to/some/project/.dirstack
+    fcd - /path/to/some/project
 
-    fcd - /path/to/some/project/.dirstack 5
+    fcd - /path/to/some/project 5
     
     fcd + arg arg arg ...
     
