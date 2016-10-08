@@ -1,6 +1,7 @@
 # fcd looks in $DIRFILE initially $HOME/.dirstack and lets you pick one
 # if fcd has a parameter go to that value.
 # if 2 parameters use second one as file if first is - pickone else go to first
+# if second param is a directory, add the missing '.dirstack'
 #
 # the sed is to handle bill gates stupid spaces in direcory names
 # file $HOME/.sed_dir.txt contains "s/\/\/\// /g"
@@ -20,6 +21,10 @@ function fcd {
    if test x$2 != x
    then
      f=$2
+     if test -d $f
+     then
+         f="$f/.dirstack"
+     fi
    fi
 
    if test x$1 == "x-"
