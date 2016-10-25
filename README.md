@@ -76,6 +76,9 @@ Need examples and explanations for these:
       # i.e bring up menu of file /home/preston/.dirstack select one from menu
       #     then cd to there and do a fcdhere resetting DIRFILE to where the cd took you.
 
+      # a convention I use is every DIRFILE has it current path as the first entry.
+      
+
 
     
     
