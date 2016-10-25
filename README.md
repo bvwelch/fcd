@@ -58,12 +58,25 @@ Advanced Examples:
 Need examples and explanations for these:
 
     fcd 5 /path/to/project
+     #skip menu display and display, select the 5th entry of the file /path/to/project/.dirstack
 
     fcd - /path/to/some/project
-
+     # display menu from /path/to/some/project/.dirstack and select one from menu
     fcd - /path/to/some/project 5
-    
-    fcd + arg arg arg ...
+       ???    
+    fcd + arg arg ...
+      # same as above execpt do a fcdhere after the slection.
+      # examples:
+      # fcd +
+      # same as  fcd  except do a fcdhere after selection.
+      # fcd + 5
+      # same as fcd 5 except do a fcdhere after selection.
+      # fcd + - /home/preston
+      # same as fcd - /home/preston except do a fcdhere after selection.
+      # i.e bring up menu of file /home/preston/.dirstack select one from menu
+      #     then cd to there and do a fcdhere resetting DIRFILE to where the cd took you.
+
+
     
     
     
