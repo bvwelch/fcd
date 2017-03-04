@@ -62,9 +62,14 @@ DONE
    # if we land on a new project, go ahead and activate it.
    if test -r "$PWD/.dirstack"
    then
-      export DIRFILE="$PWD/.dirstack"
+      if test -w "$PWD/.dirstack"
+      then
+         export DIRFILE="$PWD/.dirstack"
+      else
+         echo "dirstack is not writable. use fcdhere manually if desired"
+      fi
    fi
-   echo DIRFILE is $DIRFILE
+   #echo DIRFILE is $DIRFILE
 }
 
 #dpd deletes a entry in the $DIRFILE
