@@ -35,6 +35,7 @@ function fcd {
    if test x$1 != x
    then
        n=$1
+       echo DIRFILE is $DIRFILE
        select foo in `cat $f`
        do
             cd "`echo $foo |  sed -f $HOME/.sed_dir.txt`"
@@ -46,6 +47,7 @@ DONE
 
    else
 
+    echo DIRFILE is $DIRFILE
     select foo in `cat $f`
     do
         cd "`echo $foo |  sed -f $HOME/.sed_dir.txt`"
