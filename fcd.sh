@@ -12,7 +12,7 @@ export DIRFILE="$HOME/.dirstack"
 function fcd {
    f=$DIRFILE
    dofcdhere=F
-   if test x$1 == x+
+   if test x$1 = x+
    then
       shift 1
       dofcdhere=T
@@ -27,7 +27,7 @@ function fcd {
      fi
    fi
 
-   if test x$1 == "x-"
+   if test x$1 = "x-"
    then
       shift 2
    fi   
@@ -57,7 +57,7 @@ DONE
 
    fi
 
-   if test $dofcdhere == T
+   if test $dofcdhere = T
    then
       fcdhere
    fi
